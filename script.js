@@ -1,5 +1,5 @@
 function goHome(){
-        window.location.href = "01_index.html" ;
+        window.location.href = "index.html" ;
     }
 
     document.getElementById("submitBtn").addEventListener("click",handleSubmit);
@@ -153,7 +153,7 @@ const severityWeight = {
     localStorage.setItem("Resources",JSON.stringify(totalResources)) ;
     localStorage.setItem("regionsData",JSON.stringify(regions)) ; 
     
-    window.location.href = "03_output.html" ;
+    window.location.href = "output.html" ;
 };
     console.log("run at last step");
 

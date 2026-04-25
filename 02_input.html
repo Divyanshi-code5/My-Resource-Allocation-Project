@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="05_input.css" >
+    <title>input page</title>
+    
+</head>
+<body>
+   <div class="inputpanel">
+    <div class="headline">
+        <h1>Enter Disaster Details</h1>
+    </div>
+    <div class="content">
+        <label>Disaster</label>
+        <select  id="disaster">
+            <option value="Search here">Search here</option>
+            <option value="Drought">Drought</option>
+            <option value="Flood">Flood</option>
+            <option value="Earthquake">Earthquake</option>
+            <option value="Cyclone">Pandemic</option>
+            <option value="Tsunami">War</option>
+        </select>
+        <table>
+            <tr>
+                <th>Affected Region</th>
+                <th>Affected Population</th>
+                <th>Severity Level(e.g. low,high)</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+            </tr>
+            <tr>
+                <td><input class="style" id="region1name" type="text" placeholder="enter first region"><small id="region1nameerror" class="error"></small></td>
+                <td><input class="style" id="region1pop" type="number" placeholder="enter affected population"><small id="region1poperror" class="error"></small></td>
+                <td><input class="style" id="region1sev" type="text" placeholder="enter severity level"><small id="region1severror" class="error"></small></td>
+                <td><input class="style" type="number" placeholder="enter Latitude" id="lat1"><small id="lat1error" class="error"></small></td>
+                <td><input class="style" type="number" placeholder="enter longitude" id="lng1"><small id="lng1error" class="error"></small></td>
+            </tr>
+            <tr>
+                <td><input class="style" id="region2name" type="text" placeholder="enter second region"><small id="region2nameerror" class="error"></small></td>
+                <td><input class="style" id="region2pop" type="number" placeholder="enter affected population"><small id="region2poperror" class="error"></small></td>
+                <td><input class="style" id="region2sev" type="text" placeholder="enter severity level"><small id="region2severror" class="error"></small></td>
+                <td><input class="style" type="number" placeholder="enter Latitude" id="lat2"><small id="lat2error" class="error"></small></td>
+                <td><input class="style" type="number" placeholder="enter longitude" id="lng2"><small id="lng2error" class="error"></small></td>
+            </tr>
+            <tr>
+                <td><input class="style" id="region3name" type="text" placeholder="enter third region"><small id="region3nameerror" class="error"></small></td>
+                <td><input class="style" id="region3pop" type="number" placeholder="enter affected population"><small id="region3poperror" class="error"></small></td>
+                <td><input class="style" id="region3sev" type="text" placeholder="enter severity level"><small id="region3severror" class="error"></small></td>
+                <td><input class="style" type="number" placeholder="enter Latitude" id="lat3"><small id="lat3error" class="error"></small></td>
+                <td><input class="style" type="number" placeholder="enter longitude" id="lng3"><small id="lng3error" class="error"></small></td>
+            </tr>
+            <tr>
+                <td><input class="style" id="region4name" type="text" placeholder="enter fourth region"><small id="region4nameerror" class="error"></small></td>
+                <td><input class="style" id="region4pop" type="number" placeholder="enter affected population"><small id="region4poperror" class="error"></small></td>
+                <td><input class="style" id="region4sev" type="text" placeholder="enter severity level"><small id="region4severror" class="error"></small></td>
+                <td><input class="style" type="number" placeholder="enter Latitude" id="lat4"><small id="lat4error" class="error"></small></td>
+                <td><input class="style" type="number" placeholder="enter longitude" id="lng4"><small id="lng4error" class="error"></small></td>
+            </tr>
+            <tr>
+                <td><input class="style" id="region5name" type="text" placeholder="enter fifth region"><small id="region5nameerror" class="error"></small></td>
+                <td><input class="style" id="region5pop" type="number" placeholder="enter affected population"><small id="region5poperror" class="error"></small></td>
+                <td><input class="style" id="region5sev" type="text" placeholder="enter severity level"><small id="region5severror" class="error"></small></td>
+                <td><input class="style" type="number" placeholder="enter Latitude" id="lat5"><small id="lat5error" class="error"></small></td>
+                <td><input class="style" type="number" placeholder="enter longitude" id="lng5"><small id="lng5error" class="error"></small></td>
+            </tr>
+        </table>
+        
+        <label>Available budget (₹ in Lakhs)</label>
+        <input  type="number" id="budget">
+
+        <div class="btnbox">
+            <div><button class="home-btn" onclick="goHome()">Home</button></div>
+            <div><button id="submitBtn">Generate Allocation Plan</a></button></div>
+        </div> 
+    </div>
+   </div>
+
+   <script src="07_script.js"></script>
+   
+</body>
+</html>

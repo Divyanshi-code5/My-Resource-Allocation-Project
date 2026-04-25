@@ -1,0 +1,179 @@
+body{
+            margin: 0;
+            padding: 0; 
+            background-color: #f0f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .top{
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 15px 20px ;
+        }
+        #topRegion{
+            height: 50px;
+            font-size: 25px;
+            font-weight: bolder;
+            color: black;
+        }
+        .outputbox{
+            height: 1200px;
+            width: 800px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            border: 2px solid #e2e8f0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.7);
+            margin-top: 50px;
+        } 
+        .resourcecardbox{
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .minicard{
+            background-color: #eaf1f8;
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            height: 130px;
+            width: 150px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        value{
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a3c5e;
+            margin-bottom: 5px;
+        }
+        label{
+            font-weight: 500;
+            font-size: 14px;
+            color: #718096;
+            margin-bottom: 10px;
+        }
+        .text{
+            height: 80px;
+            width: 80px;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 18px;
+        }
+        .aibox{
+            height: 160px;
+            width: 90%;
+            background-color: #f8f989;
+            margin-left: 25px ;
+            margin-top: 20px;
+            border-left: 4px solid #e8621a;
+            padding: 16px 20px;
+            font-size: 18px;
+            color: #4a5568;
+            line-height: 1.4;
+        }
+        .main{
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .heading{
+            font-size: 25px;
+            color: #e8621a;
+            margin-left: 6px;
+            font-weight: bolder;
+        }
+        .priorityheading{
+            font-size: 25px;
+            color: black;
+            margin-left: 30px;
+            margin-top: 8px;
+        }
+        .zonebox{
+            height: 200px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .zonenumber{
+            font-size: 15px;
+            color: black;
+            font-weight: 600;
+        }
+        .barbox{
+            height: 150px;
+            width: 150px;
+            position: relative;
+            background-color: white;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            border-bottom: 2px solid black;
+        }
+        .barfill{
+            position: absolute;
+            height:150px ;
+            width: 40px;
+            display: flex;
+            align-items: flex-end;
+            justify-content:center;
+        }
+        .graphbox{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+           
+        }
+        .mapbox{
+           height: 700px;
+           width: 500px;
+           background-color: #ffffff;
+           border-radius: 16px;
+           border: 2px solid #e2e8f0;
+           box-shadow: 0 2px 12px rgba(0,0,0,0.7); 
+           margin-top: 50px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th , td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+        }
+        .btnbox{
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .btn{
+            height: 48px;
+            width: 80px;
+            color: white;
+            background-color: blue;
+            border-radius: 10px;border: none;
+        }
+        #map{
+            height: 400px;
+            width: 100%;
+        }

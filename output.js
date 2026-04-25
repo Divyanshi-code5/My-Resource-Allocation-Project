@@ -1,8 +1,8 @@
 function goBack(){
-            window.location.href="02_input.html";
+            window.location.href="input.html";
         }
         function goHome() {
-            window.location.href="01_index.html";
+            window.location.href="index.html";
         }
 
     const regions = JSON.parse(localStorage.getItem("regionsData")) || [] ;

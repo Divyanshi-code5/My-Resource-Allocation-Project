@@ -5,7 +5,6 @@ body{
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         .top{
@@ -15,14 +14,14 @@ body{
             margin: 10px 15px 20px ;
         }
         #topRegion{
-            height: 50px;
+            height: fit-content;
             font-size: 25px;
             font-weight: bolder;
             color: black;
         }
         .outputbox{
-            height: 1200px;
-            width: 800px;
+            max-width: 480px;
+            width: 100%;
             background-color: #ffffff;
             border-radius: 16px;
             border: 2px solid #e2e8f0;
@@ -30,10 +29,11 @@ body{
             margin-top: 50px;
         } 
         .resourcecardbox{
-            height: 200px;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 15px;
         }
         .minicard{
             background-color: #eaf1f8;
@@ -41,7 +41,7 @@ body{
             padding: 16px;
             text-align: center;
             height: 130px;
-            width: 150px;
+            width: 80px;
             margin-top: 20px;
             display: flex;
             flex-direction: column;
@@ -70,19 +70,20 @@ body{
             margin-bottom: 18px;
         }
         .aibox{
-            height: 160px;
-            width: 90%;
+            height: fit-content;
+            max-width: 480px;
             background-color: #f8f989;
-            margin-left: 25px ;
-            margin-top: 20px;
+            margin-left: 5px ;
+            margin-top: 10px;
             border-left: 4px solid #e8621a;
-            padding: 16px 20px;
+            padding: 15px;
             font-size: 18px;
-            color: #4a5568;
-            line-height: 1.4;
+            word-wrap: break-word;
+            color: black;
         }
         .main{
-            width: 150px;
+            width: 100%;
+            max-width: 250px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -101,10 +102,12 @@ body{
             margin-top: 8px;
         }
         .zonebox{
-            height: 200px;
             display: flex;
+            flex-direction: row;
             justify-content:center;
             align-items: center;
+            gap: 10px;
+            padding: 20px;
         }
         .zonenumber{
             font-size: 15px;
@@ -113,7 +116,7 @@ body{
         }
         .barbox{
             height: 150px;
-            width: 150px;
+            width: 40px;
             position: relative;
             background-color: white;
             display: flex;
@@ -124,7 +127,7 @@ body{
         .barfill{
             position: absolute;
             height:150px ;
-            width: 40px;
+            width: 20px;
             display: flex;
             align-items: flex-end;
             justify-content:center;
@@ -137,13 +140,19 @@ body{
            
         }
         .mapbox{
-           height: 700px;
-           width: 500px;
+           height: auto;
+           width: 100%;
+           max-width: 500px;
+           padding: 20px;
            background-color: #ffffff;
            border-radius: 16px;
            border: 2px solid #e2e8f0;
            box-shadow: 0 2px 12px rgba(0,0,0,0.7); 
            margin-top: 50px;
+        }
+        .allocationtable{
+            width: 100%;
+            overflow-x: auto;
         }
         table{
             width: 100%;
@@ -174,6 +183,17 @@ body{
             border-radius: 10px;border: none;
         }
         #map{
-            height: 400px;
+            border-radius: 10px;
+            height: 300px;
             width: 100%;
+        }
+        @media(max-width:768px){
+            #map{height: 220px;}
+            value{font-size: 18px;}
+            .zonenumber{
+                font-size: 12px;
+            }
+            .aibox{
+                max-width: 360px;
+            }
         }

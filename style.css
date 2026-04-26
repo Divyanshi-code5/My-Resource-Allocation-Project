@@ -1,19 +1,24 @@
+*{
+    box-sizing: border-box;
+}
 body{
     padding: 0;
     margin: 0;
     background-color: #f0f4f8;
+    overflow-x: hidden;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .navbar{
-    height: 64px;
+    padding: 10px 20px;
     width: 100%;
     background-color: #1a3c5e;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border-bottom: 2px solid #e8621a ;
 }
 .logo{
@@ -55,7 +60,6 @@ body{
     margin-left: none;
 }
 .tag{
-    height: 18px;
     width: 100%;
     background-color: #e8621a;
     bottom: 0;
@@ -69,11 +73,11 @@ body{
 button{
     border-radius: 10px;
     background-color: #e8621a;
-    height: 50px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     border: none;
-    margin: 140px 50px ;
-    margin-top: 30px;
+    margin: 20px ;
+    display: block;
 }
 button a{
     color: white;
@@ -83,14 +87,13 @@ button a{
 button:hover{
     background-color: #c9541a;}
 .main{
-    height: 600px;
-    width: 100%;
+    padding: 80px 20px 40px;
     background-color: #1a3c5e;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 64px;
+    background:linear-gradient(#12283f,#1e466d,#27598c,#1e466d);
 }
 .first{
     color: white;
@@ -101,16 +104,16 @@ button:hover{
     color: gold;
 }
 .herosection{
-    height: 400px;
-    width: 60%;
-    background-color:linear-gradient(#12283f,#1e466d,#27598c);
+    width: 100%;
+    max-width:800px;
+    text-align: center;
 }
 .first, .second , .third{
     height: 50px;
 }
 .tagline{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 55px;
+    font-size: 40px;
     height: 200px;
     display: block;
     margin-bottom: none;
@@ -126,8 +129,8 @@ button:hover{
 }
 
 .working{
-    background-color: #1a3c5e;
-    height: 600px;
+    background-color: #1e466d;
+    height: auto;
     width: 100%;
 }
 .workheading{
@@ -166,13 +169,9 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: center; 
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: none;
+    margin:20px 0;
 }
 .subline{
-    height: 40px;
-    width: 300px;
     font-size: 25px;
     color: white;
     text-transform: uppercase;
@@ -180,12 +179,10 @@ button:hover{
     text-align: center;
 }
 .line{
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 25
-    0px;
     font-size: 18px;
     color: lightslategrey;
     word-spacing: 3px;
@@ -193,21 +190,104 @@ button:hover{
 }
 .processbox{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    height: 500px;
+    gap: 20px;
+}
+@media(max-width:768px){
+    .stepheading{
+        font-size: 20px;
+    }
+    .processbox{
+        max-height: fit-content;
+        flex-direction: column;
+        align-items: center;
+    }
+    .process{
+        max-height: fit-content;
+    }
+    .circle{
+        max-height: max-content;
+        max-width: max-content;
+    }
+    .subline{
+        font-size: 28px;
+    }
+    .line{
+        font-size: 14px;
+    }
+    .working{
+        height: fit-content;
+    }
+    .thirdbox{
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+    }
+    .thirdelement{
+        max-height: fit-content;
+    }
+    .thirdmaincontent{
+        max-height: fit-content;
+    }
+    .thirdheading{
+        font-size: 24px;
+    }
+    .thirdsubheading{
+        font-size: 14px;
+    }
+    .footmain{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar{
+        flex-direction: row;
+        align-items: center;
+    }
+    .items{
+        display: block;
+    }
+    .tagline{
+        font-size: 28px;
+    }
+    .content{
+        font-size: 14px;
+        padding: 10px;
+    }
+    .subheading{
+        font-size: 14px;
+    }
+    .main{
+        height: fit-content;
+        flex-direction: column;
+        text-align: center;
+    }
+    .tag{
+        margin-bottom: 40px;
+    }
+    .imagebox{
+        width: 100%;
+        max-width: 350px;
+    }
+    .imagebox img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 }
 .process{
+    width: 100%;
     display: flex;
+    flex: 1 1 250px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 350px;
-    width: 360px;
-    margin-top: none;
+    max-width: 300px;
+    margin-top: 0;
 }
 .thirdelement{
-    height: 600px;
+    height: fit-content;
     width: 100%;
     background-color: #f0f4f8;
 }
@@ -230,7 +310,7 @@ button:hover{
     font-size: 40px;
     text-transform: uppercase;
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .thirdsubheading{
     color: lightslategrey;
@@ -240,15 +320,15 @@ button:hover{
     word-spacing: 3px;
 }
 .thirdbox{
-    height: 400px;
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 }
 .thirdmaincontent{
-    height: 350px;
-    width: 400px;
+    max-width: 320px;
+    flex: 1 1 250px;
     background-color: white;
     border-radius: 20px;
     margin-top: 10px;
@@ -259,23 +339,25 @@ button:hover{
     align-items: center;
     justify-content: center;
 }
+
 .thirdline{
     font-size: 15px;
     color: lightslategrey;
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 .imagebox{
-    width: 400px;
+    width: 100%;
+    max-width: 350px;
     height: 200px;
     overflow: hidden;
 }
 .imagebox img{
     height: 100%;
     width: 100%;
+    /* display: block; */
     background-size:cover;
 }
 footer{
-    height:300px;
     width:100%;
     background-color: #1a3c5e;
     display: flex;
@@ -285,10 +367,11 @@ footer{
     color:whitesmoke;
 }
 .footmain{
-    height: 100px;
     width: 100%;
     margin-bottom: 40px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     align-self: center;
     justify-content: space-evenly;
     border-bottom: 1px solid lightslategrey;
